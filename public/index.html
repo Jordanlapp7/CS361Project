@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with GPT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Please select your preferences for the article:</h1>
+  <form action="/generate" method="post">
+      <label for="date">Pick a date (1950-2020):</label>
+      <input type="date" name="date" id="date" min="1950-01-01" max="2020-12-31" required>
+      <br><br>
+      <fieldset>
+        <legend>Select sports leagues:</legend>
+        <input type="checkbox" id="nba" name="sports-league" value="NBA">
+        <label for="nba">NBA</label>
+        <br>
+        <input type="checkbox" id="nfl" name="sports-league" value="NFL">
+        <label for="nfl">NFL</label>
+        <br>
+        <input type="checkbox" id="nhl" name="sports-league" value="NHL">
+        <label for="nhl">NHL</label>
+        <br>
+        <input type="checkbox" id="mlb" name="sports-league" value="MLB">
+        <label for="mlb">MLB</label>
+        <br>
+    </fieldset>
+    <br>
+      <label for="article-length">Select article length:</label>
+      <select name="article-length" id="article-length">
+          <option value="short">Short</option>
+          <option value="medium">Medium</option>
+          <option value="long">Long</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+  </form>
+  <a href="/about.html">About</a>
+  <script src="script.js"></script>
+</body>
+</html>

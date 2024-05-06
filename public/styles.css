@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  h1, form, p, a, ul {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: fit-content;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  form {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    font-size: large;
+    border-width: 0;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    min-width: 50px;
+    font-size: large;
+    border-width: 0;
+    background-color: transparent;
+    text-align: right;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  a, a:hover, a:active, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#helpText {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#closeButton {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid white;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: fit-content;
+  border-radius: 10px;
+}
